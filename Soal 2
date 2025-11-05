@@ -1,0 +1,36 @@
+package uts.pbo;
+class Pegawai {
+    void dataPegawai() {
+        System.out.println("Nama Pegawai      : Sono");
+        System.out.println("Jabatan           : Pegawai");
+    }
+}
+
+class Manager extends Pegawai {
+    void dataManager() {
+        System.out.println("Nama Manager      : Wibi");
+        System.out.println("Jabatan           : Manager");
+    }
+}
+
+class Direktur extends Manager {
+    void dataDirektur() {
+        System.out.println("Nama Direktur     : Tegar");
+        System.out.println("Jabatan           : Direktur");
+    }
+}
+
+public class Inheritance {
+    public static void main(String[] args) {
+        Direktur d = new Direktur();
+        
+        System.out.println("Data dari class Pegawai : ");
+        d.dataPegawai();
+        
+        System.out.println("\nData dari class Manager");
+        d.dataManager();
+        
+        System.out.println("\nData dari class Direktur");
+        d.dataDirektur();
+    }
+}
