@@ -1,0 +1,28 @@
+package uts.pbo;
+class AlatMusik {
+
+    void suara() {
+        System.out.println("Punya ciri khas masing-masing");
+    }
+}
+
+class Terompet extends AlatMusik {
+    void suara() {
+        System.out.println("Tet tetet teretetet tet tet tet");
+    }
+}
+
+public class UTSPBO {
+    public static void main(String[] args) {
+        AlatMusik a = new AlatMusik();
+        Terompet t = new Terompet();
+        
+        System.out.println("Alat musik : ");
+        a.suara();
+        
+        System.out.println("\nCONTOH");
+        System.out.println("Suara terompet : ");
+        t.suara();
+        
+    }
+}
